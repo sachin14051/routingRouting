@@ -1,0 +1,10 @@
+<div class="form-group">
+    <label for="fname">First Name</label>
+    <input type="text" class="form-control" [value]="userObj.fname" #fname>
+</div>
+<div class="text-right mt-3">
+    <button class="btn btn-warning" (click)="onUpdateHandler(fname.value)">
+        update user
+    </button>
+</div>
+<!-- {{userObj|json}} -->
